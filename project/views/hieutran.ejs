@@ -1,0 +1,28 @@
+<!-- khai bao bien ejs-->
+<%  var n = "<font color=green>Green</font>"
+	var tuoi = 18;	
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Hello Hieu tran</h1>
+	<!-- <%= n%> cho bao mat ejs-->
+	<h2><%= n%></h2>
+	<!-- <%- n%> bao mat kem ejs-->
+	<h2><%- n%></h2>
+	<!-- cho if else-->
+	<% if(tuoi >=18){ %>
+			<h2>Tren 18 tuoi</h2>
+		<% }else{ %>
+			<h2>Duoi 18 tuoi</h2>
+	<% } %>
+	<!-- cho for-->
+	<% for(i=0; i<=5; i++ ){ %>
+		<h1>Day la dong thu: <%= i%></h1>
+	<% }%>
+</body>
+</html>

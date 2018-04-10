@@ -1,0 +1,24 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Upload</title>
+	</head>
+	<body>
+		<% mang.forEach(function(item){ %>
+			<div>
+				<div style="color: red">
+				<!-- lay ra phan tu image phai dung dau bang <%= item.name%>--> 
+					<%= item.mota%>
+				</div>
+			<!-- lay ra phan tu image phai dung dau bang <%= item.image%>--> 
+				<img width="300px" height="300px" src="/uploads/<%= item.image%>" alt="">
+				
+				<div style="color: blue">
+				<!-- lay ra phan tu image phai dung dau bang <%= item.name%>--> 
+					<%= item.name%>
+				</div>
+			</div>
+		<% }); %>
+	</body>
+	</html>

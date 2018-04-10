@@ -1,0 +1,16 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Upload</title>
+	</head>
+	<body>
+		<!-- them thuoc tinh multipart/form-data dể dùng cho multer ko thì ko xử  lý-->
+		<form action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+			<input type="file" name="file">
+			</br>
+			<input type="submit" value="upload">
+
+		</form>
+	</body>
+	</html>

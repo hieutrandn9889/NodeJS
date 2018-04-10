@@ -1,0 +1,27 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Upload</title>
+	</head>
+	<body>
+		<!-- them thuoc tinh multipart/form-data dể dùng cho multer ko thì ko xử  lý-->
+		<h1>ADD BANH VAO DB VA MO TA </h1>
+		<form action="http://localhost:3000/product_types" method="POST" enctype="multipart/form-data">
+			<select name="loai">
+				<!-- cupcakes, cakes, macarons, cookies lấy trong db-->
+				<option value="0">--chon loai banh--</option>
+				<option value="cupcakes">CUPCAKES</option>
+				<option value="cakes">CAKES</option>
+				<option value="macarons">MACARONS</option>
+				<option value="cookies">COOKIES</option>
+			</select>
+			<br>
+			<input type="text" name="ten" placeholder="Nhập tên bánh"></br>
+			<input type="file" name="file"></br>
+			<textarea name="mota"></textarea></br>
+			<input  type="submit" value="upload">
+
+		</form>
+	</body>
+	</html>
